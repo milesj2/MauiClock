@@ -1,0 +1,24 @@
+﻿<Frame xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiClock.Controls.DigitalClockControl" 
+        BorderColor="Orange"
+        CornerRadius="10"
+        HasShadow="True">
+    <VerticalStackLayout HorizontalOptions="CenterAndExpand"
+                VerticalOptions="StartAndExpand">
+
+        <Label x:Name="lblTime"
+               HorizontalTextAlignment="Center"
+               Text="00:00:00" />
+        <StackLayout Orientation="Horizontal">
+            <Label x:Name="lblDate" 
+                   Text="Mon, Jan 01" />
+            <Label x:Name="lblNextAlarm" 
+                   Margin="20,0,0,0"
+                   Text="Tues 00:00"/>
+        </StackLayout>
+
+
+</VerticalStackLayout>
+</Frame>
+    
